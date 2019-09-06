@@ -4,5 +4,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SocialMediaUser {
-    String username = "John Smith";
+    private String username;
+
+    public SocialMediaUser() {
+        this.username = "John Smith";
+    }
 }

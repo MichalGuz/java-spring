@@ -10,5 +10,8 @@ public class SocialMediaTestSuite {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.social_media");
         SocialMediaUser user = context.getBean(SocialMediaUser.class);
+
+        // when
+        String name = user.
     }
 }

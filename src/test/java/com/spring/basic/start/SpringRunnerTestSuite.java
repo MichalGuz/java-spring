@@ -2,6 +2,7 @@ package com.spring.basic.start;
 
 import com.spring.basic.start.shape.Circle;
 import com.spring.basic.start.shape.Shape;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,6 +22,9 @@ public class SpringRunnerTestSuite {
 
 		// when
 		String name = shape.getShapeName();
+
+		// then
+		Assert.assertEquals("This is a circle.", name);
 	}
 
 }

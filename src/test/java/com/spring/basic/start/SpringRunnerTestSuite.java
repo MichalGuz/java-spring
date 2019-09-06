@@ -36,6 +36,9 @@ public class SpringRunnerTestSuite {
 
 		// when
 		String name = shape.getShapeName();
+
+		// then
+		Assert.assertEquals("This is a triangle.", name);
 	}
 
 }

@@ -9,4 +9,8 @@ public class SocialMediaUser {
     public SocialMediaUser() {
         this.username = "John Smith";
     }
+
+    public String getUsername(){
+        return username;
+    }
 }

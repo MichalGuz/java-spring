@@ -27,4 +27,9 @@ public class SpringRunnerTestSuite {
 		Assert.assertEquals("This is a circle.", name);
 	}
 
+	@Test
+	public void testTriangleLoadedIntoContainer(){
+
+	}
+
 }

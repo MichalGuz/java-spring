@@ -12,6 +12,8 @@ public class SocialMediaTestSuite {
         SocialMediaUser user = context.getBean(SocialMediaUser.class);
 
         // when
-        String name = user.
+        String name = user.getUsername();
+
+
     }
 }

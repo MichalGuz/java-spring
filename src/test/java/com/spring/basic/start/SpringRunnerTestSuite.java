@@ -2,6 +2,7 @@ package com.spring.basic.start;
 
 import com.spring.basic.start.shape.Circle;
 import com.spring.basic.start.shape.Shape;
+import com.spring.basic.start.shape.Triangle;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,7 +30,9 @@ public class SpringRunnerTestSuite {
 
 	@Test
 	public void testTriangleLoadedIntoContainer(){
-
+		// given
+		ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
+		Shape shape = context.getBean(Triangle.class);
 	}
 
 }

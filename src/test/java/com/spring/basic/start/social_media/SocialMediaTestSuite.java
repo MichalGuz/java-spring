@@ -1,5 +1,6 @@
 package com.spring.basic.start.social_media;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -14,6 +15,7 @@ public class SocialMediaTestSuite {
         // when
         String name = user.getUsername();
 
-
+        // then
+        Assert.assertEquals("John Smith", name);
     }
 }

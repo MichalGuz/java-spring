@@ -2,6 +2,7 @@ package com.spring.basic.start;
 
 import com.spring.basic.start.shape.Circle;
 import com.spring.basic.start.shape.Shape;
+import com.spring.basic.start.shape.Square;
 import com.spring.basic.start.shape.Triangle;
 import org.junit.Assert;
 import org.junit.Test;
@@ -45,5 +46,6 @@ public class SpringRunnerTestSuite {
     public void testSquareLoadedIntoContainer(){
 	    // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
+        Shape shape = context.getBean(Square.class);
     }
 }

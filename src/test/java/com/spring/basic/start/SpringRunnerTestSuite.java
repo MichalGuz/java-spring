@@ -21,6 +21,7 @@ public class SpringRunnerTestSuite {
 		String name = shape.getShapeName();
 
 		// then
+        System.out.println("String name = " + name);
 		Assert.assertEquals("This is a circle.", name);
 	}
 
@@ -48,6 +49,7 @@ public class SpringRunnerTestSuite {
         String name = shape.getShapeName();
 
         // then
+        System.out.println("String name = " + name);
         Assert.assertEquals("This is square.", name);
     }
 }

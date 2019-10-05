@@ -1,4 +1,7 @@
 package com.spring.basic.start.library;
 
-public class LibraryDbControler {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public final class LibraryDbControler {
 }

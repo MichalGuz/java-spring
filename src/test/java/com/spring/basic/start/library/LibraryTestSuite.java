@@ -15,5 +15,11 @@ public class LibraryTestSuite {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.library");
         Library library = context.getBean(Library.class);
+
+        // when
+        library.loadFromDb();
+
+        // then
+        // do nothing
     }
-    }
+}

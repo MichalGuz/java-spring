@@ -22,4 +22,9 @@ public class LibraryTestSuite {
         // then
         // do nothing
     }
+
+    @Test
+    public void testSaveToDb() {
+
+    }
 }

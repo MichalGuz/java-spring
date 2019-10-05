@@ -57,4 +57,9 @@ public class SpringRunnerTestSuite {
         System.out.println("String name = " + name);
         Assert.assertEquals("This is a square.", name);
     }
+
+    @Test
+	public void testRectangleLoadedIntoContainer(){
+
+	}
 }

@@ -65,7 +65,7 @@ public class SpringRunnerTestSuite {
 		String name = shape.getShapeName();
 
 		// then
-		System.out.println("Name of shape =" + name);
+		System.out.println("Name of shape = " + name);
 		Assert.assertEquals("This is a rectangle.", name);
 	}
 }

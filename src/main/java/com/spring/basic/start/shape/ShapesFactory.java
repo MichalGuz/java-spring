@@ -20,6 +20,7 @@ public class ShapesFactory {
     public Shape choosenShape() {
         Shape theShape;
         Random generator = new Random();
+        int choosen = generator.nextInt(4);
         return theShape;
     }
 }

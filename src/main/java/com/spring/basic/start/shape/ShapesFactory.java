@@ -17,6 +17,7 @@ public class ShapesFactory {
         return new Rectangle();
     }
 
+    @Bean
     public Shape choosenShape() {
         Shape theShape;
         Random generator = new Random();

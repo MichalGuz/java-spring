@@ -77,5 +77,8 @@ public class SpringRunnerTestSuite {
 
 		// when
 		String name = shape.getShapeName();
+
+		// then
+		System.out.println("The name of choosen shape is: \"" + name + "\"");
 	}
 }

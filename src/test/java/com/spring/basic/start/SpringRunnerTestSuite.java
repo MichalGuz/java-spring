@@ -74,5 +74,8 @@ public class SpringRunnerTestSuite {
 		// given
 		ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
 		Shape shape = (Shape)context.getBean("choosenShape");
+
+		// when
+		String name = shape.getShapeName();
 	}
 }

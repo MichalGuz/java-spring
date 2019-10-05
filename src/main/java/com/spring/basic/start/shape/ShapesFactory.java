@@ -9,4 +9,8 @@ public class ShapesFactory {
     public Square createSquare(){
         return new Square();
     }
+
+    public Rectangle createRectangle(){
+        return new Rectangle();
+    }
 }

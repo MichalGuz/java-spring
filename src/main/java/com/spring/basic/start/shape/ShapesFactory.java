@@ -3,6 +3,8 @@ package com.spring.basic.start.shape;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Random;
+
 @Configuration
 public class ShapesFactory {
     @Bean
@@ -17,6 +19,7 @@ public class ShapesFactory {
 
     public Shape choosenShape() {
         Shape theShape;
+        Random generator = new Random();
         return theShape;
     }
 }

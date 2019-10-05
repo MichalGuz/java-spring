@@ -13,4 +13,12 @@ public final class Library {
     public Library(LibraryDbControler libraryDbControler) {
         this.libraryDbControler = libraryDbControler;
     }
+
+    public void saveToDb() {
+        libraryDbControler.saveData();
+    }
+
+    public void loadFromDb() {
+        libraryDbControler.loadData();
+    }
 }

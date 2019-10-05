@@ -14,4 +14,9 @@ public class ShapesFactory {
     public Rectangle createRectangle(){
         return new Rectangle();
     }
+
+    public Shape choosenShape() {
+        Shape theShape;
+        return theShape;
+    }
 }

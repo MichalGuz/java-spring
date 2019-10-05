@@ -25,6 +25,14 @@ public class LibraryTestSuite {
 
     @Test
     public void testSaveToDb() {
+        // given
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.library");
+        Library library = context.getBean(Library.class);
 
+        // when
+        library.saveToDb();
+
+        // then
+        // do nothing
     }
 }

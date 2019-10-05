@@ -71,6 +71,7 @@ public class SpringRunnerTestSuite {
 
 	@Test
 	public void testShapeLoadedIntoContainer(){
-
+		// given
+		ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
 	}
 }

@@ -55,6 +55,6 @@ public class SpringRunnerTestSuite {
 
         // then
         System.out.println("String name = " + name);
-        Assert.assertEquals("This is square.", name);
+        Assert.assertEquals("This is a square.", name);
     }
 }

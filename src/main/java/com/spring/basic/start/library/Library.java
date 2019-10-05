@@ -11,6 +11,7 @@ public final class Library {
     private final List<String> books = new ArrayList<>();
     private LibraryDbControler libraryDbControler;
 
+    @Autowired
     public Library(final LibraryDbControler libraryDbControler) {
         this.libraryDbControler = libraryDbControler;
     }

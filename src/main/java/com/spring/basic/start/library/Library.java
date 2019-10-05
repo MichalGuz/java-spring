@@ -11,8 +11,13 @@ public final class Library {
     private final List<String> books = new ArrayList<>();
     private LibraryDbControler libraryDbControler;
 
-    public Library (final LibraryDbControler libraryDbControler) {
+    public Library(final LibraryDbControler libraryDbControler) {
         this.libraryDbControler = libraryDbControler;
+    }
+
+    // second constructor without parameters
+    public Library() {
+        // nothing
     }
 
     public void saveToDb() {

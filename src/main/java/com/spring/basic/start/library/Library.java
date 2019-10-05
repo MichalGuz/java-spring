@@ -9,4 +9,8 @@ import java.util.List;
 public final class Library {
     private final List<String> books = new ArrayList<>();
     private final LibraryDbControler libraryDbControler;
+
+    public Library(LibraryDbControler libraryDbControler) {
+        this.libraryDbControler = libraryDbControler;
+    }
 }

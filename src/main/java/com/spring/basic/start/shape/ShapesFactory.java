@@ -21,6 +21,15 @@ public class ShapesFactory {
         Shape theShape;
         Random generator = new Random();
         int choosen = generator.nextInt(4);
+        if (choosen == 0){
+            theShape = new Circle();
+        } else if (choosen == 1){
+            theShape = new Rectangle();
+        } else if (choosen == 2){
+            theShape = new Square();
+        } else {
+            theShape = new Triangle();
+        }
         return theShape;
     }
 }

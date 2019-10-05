@@ -70,7 +70,7 @@ public class SpringRunnerTestSuite {
 	}
 
 	@Test
-	public void testShapeLoadedIntoContainer(){
+	public void testXShapeLoadedIntoContainer(){
 		// given
 		ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
 		Shape shape = (Shape)context.getBean("choosenShape");

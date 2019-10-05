@@ -10,6 +10,7 @@ public class ShapesFactory {
         return new Square();
     }
 
+    @Bean
     public Rectangle createRectangle(){
         return new Rectangle();
     }

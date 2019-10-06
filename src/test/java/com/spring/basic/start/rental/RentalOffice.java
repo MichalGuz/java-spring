@@ -8,6 +8,10 @@ import java.util.List;
 @Service
 public class RentalOffice {
     private final List<String> books = new ArrayList<>();
-    private RentalOfficeDbController rentalOfficeDbController;
+    private final RentalOfficeDbController rentalOfficeDbController;
+
+    public RentalOffice(RentalOfficeDbController rentalOfficeDbController) {
+        this.rentalOfficeDbController = rentalOfficeDbController;
+    }
 
 }

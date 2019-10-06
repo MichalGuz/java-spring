@@ -15,7 +15,7 @@ public class RentalOfficeTestSuite {
     public void testLoadDataFromDb() {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.rental");
-
+        RentalOffice rentalOffice = context.getBean(RentalOffice.class);
 
         // when
 

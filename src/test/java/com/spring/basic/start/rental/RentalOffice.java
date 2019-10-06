@@ -18,4 +18,12 @@ public class RentalOffice {
         // no parameters
     }
 
+    public void loadData() {
+        rentalOfficeDbController.loadData();
+    }
+
+    public void saveData() {
+        rentalOfficeDbController.saveData();
+    }
+
 }

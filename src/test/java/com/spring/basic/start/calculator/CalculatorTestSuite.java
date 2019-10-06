@@ -22,10 +22,15 @@ public class CalculatorTestSuite {
         double a = 3.0;
         double b = 2.0;
         Calculator calculator = new Calculator(display);
-        double result = calculator.add(a, b);
+        double addResult = calculator.add(a, b);
+        double subResult = calculator.sub(a, b);
+        double mulResult = calculator.mul(a, b);
+        double divResult = calculator.div(a, b);
 
         // then
-        Assert.assertEquals(5.0, result, 0.01);
-
+        Assert.assertEquals(5.0, addResult, 0.01);
+        Assert.assertEquals(1.0, subResult, 0.01);
+        Assert.assertEquals(6.0, mulResult, 0.01);
+        Assert.assertEquals(1.5, divResult,0.01);
     }
 }

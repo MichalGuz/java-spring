@@ -27,6 +27,7 @@ public class RentalOfficeTestSuite {
     @Test
     public void testSaveDataToDb() {
         // given
-
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.rental");
+        RentalOffice rentalOffice= context.getBean(RentalOffice.class);
     }
 }

@@ -28,6 +28,12 @@ public class RentalOfficeTestSuite {
     public void testSaveDataToDb() {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.rental");
-        RentalOffice rentalOffice= context.getBean(RentalOffice.class);
+        RentalOffice rentalOffice = context.getBean(RentalOffice.class);
+
+        // when
+        rentalOffice.saveDataToDb();
+
+        // then
+        // do nothing
     }
 }

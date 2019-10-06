@@ -20,8 +20,8 @@ public class RentalOfficeTestSuite {
         // when
         rentalOffice.loadDataFromDb();
 
-
         // then
         // do nothing
     }
+
 }

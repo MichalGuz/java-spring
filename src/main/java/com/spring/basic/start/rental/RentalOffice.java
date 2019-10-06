@@ -22,7 +22,7 @@ public class RentalOffice {
         rentalOfficeDbController.loadData();
     }
 
-    public void saveDataFromDb() {
+    public void saveDataToDb() {
         rentalOfficeDbController.saveData();
     }
 

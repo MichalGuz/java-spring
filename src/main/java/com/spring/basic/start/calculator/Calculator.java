@@ -6,7 +6,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class Calculator {
     @Autowired
-    Display display;
+    private final Display display;
+
+    public Calculator(Display display) {
+        this.display = display;
+    }
 
     public double add(double a, double b) {
         double val = a + b;

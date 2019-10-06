@@ -14,4 +14,8 @@ public class RentalOffice {
         this.rentalOfficeDbController = rentalOfficeDbController;
     }
 
+    public RentalOffice() {
+        // no parameters
+    }
+
 }

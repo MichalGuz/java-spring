@@ -15,6 +15,6 @@ public class CalculatorTestSuite {
     public void testCalculations() {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.library");
-
+        Display display = context.getBean(Display.class);
     }
 }

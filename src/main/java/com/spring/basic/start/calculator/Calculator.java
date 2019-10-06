@@ -13,4 +13,11 @@ public class Calculator {
         display.displayValue(val);
         return val;
     }
+
+    public double sub(double a, double b) {
+        double val = a - b;
+        display.displayValue(val);
+        return val;
+        }
+    }
 }

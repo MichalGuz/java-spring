@@ -15,6 +15,12 @@ public class RentalOfficeTestSuite {
     public void testLoadDataFromDb() {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.rental");
-        RentalOfficeDbController rentalOfficeDbController = context.getBean(RentalOfficeDbController.class);
+
+
+        // when
+
+
+        // then
+        // do nothing
     }
 }

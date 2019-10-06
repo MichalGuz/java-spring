@@ -24,4 +24,9 @@ public class RentalOfficeTestSuite {
         // do nothing
     }
 
+    @Test
+    public void testSaveDataToDb() {
+        // given
+
+    }
 }

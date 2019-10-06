@@ -9,6 +9,8 @@ public class Calculator {
     Display display;
 
     public double add(double a, double b) {
-
+        double val = a + b;
+        display.displayValue(val);
+        return val;
     }
 }

@@ -16,5 +16,12 @@ public class CalculatorTestSuite {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start.calculator");
         Display display = context.getBean(Display.class);
+
+        // when
+        double a = 3.0;
+        double b = 2.0;
+        Calculator calculator = new Calculator();
+        calculator.add(a, b);
+
     }
 }

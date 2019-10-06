@@ -18,6 +18,7 @@ public class RentalOfficeTestSuite {
         RentalOffice rentalOffice = context.getBean(RentalOffice.class);
 
         // when
+        rentalOffice.loadDataFromDb();
 
 
         // then

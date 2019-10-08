@@ -5,6 +5,11 @@ import java.util.List;
 
 public final class RentalOffice {
     private final List<String>rentedItems = new ArrayList<>();
+    private final RenatlOfficeDbController renatlOfficeDbController;
+
+    public RentalOffice(final RenatlOfficeDbController renatlOfficeDbController) {
+        this.renatlOfficeDbController = renatlOfficeDbController;
+    }
 
     public void loadDataFromDb(){
 

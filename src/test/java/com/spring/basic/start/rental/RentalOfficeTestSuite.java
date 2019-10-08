@@ -35,4 +35,9 @@ public class RentalOfficeTestSuite {
         // then
         // nothing
     }
+
+    @Test
+    public void testContex() {
+
+    }
 }

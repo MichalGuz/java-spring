@@ -5,10 +5,10 @@ import java.util.List;
 
 public final class RentalOffice {
     private final List<String>rentedItems = new ArrayList<>();
-    private final RenatlOfficeDbController renatlOfficeDbController;
+    private RentalOfficeDbController rentalOfficeDbController;
 
-    public RentalOffice(final RenatlOfficeDbController renatlOfficeDbController) {
-        this.renatlOfficeDbController = renatlOfficeDbController;
+    public RentalOffice(final RentalOfficeDbController rentalOfficeDbController) {
+        this.rentalOfficeDbController = rentalOfficeDbController;
     }
 
     public RentalOffice() {

@@ -10,5 +10,8 @@ public class ReaderTestSuite {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext(ReaderConfig.class);
         Reader reader = context.getBean(Reader.class);
+
+        // when & then
+        reader.read();
     }
 }

@@ -11,6 +11,10 @@ public final class RentalOffice {
         this.renatlOfficeDbController = renatlOfficeDbController;
     }
 
+    public RentalOffice() {
+        // nothing
+    }
+
     public void loadDataFromDb(){
 
     }

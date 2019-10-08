@@ -10,4 +10,8 @@ public class ReaderConfig {
     @Autowired
     @Qualifier("book1")
     Book book;
+
+    public Reader getReader() {
+        return new Reader(book);
+    }
 }

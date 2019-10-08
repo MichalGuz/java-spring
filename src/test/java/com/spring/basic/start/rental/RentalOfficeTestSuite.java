@@ -49,4 +49,9 @@ public class RentalOfficeTestSuite {
                 .forEach(System.out::println);
         System.out.println("===========================");
     }
+
+    @Test
+    public void testWiderContex() {
+
+    }
 }

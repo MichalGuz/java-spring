@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class ReaderConfig {
@@ -18,11 +19,13 @@ public class ReaderConfig {
     }
 
     @Bean(name = "book1")
+    @Scope("prototype")
     public Book getBookOne(){
-        return new Book("The book number one.")
+        return new Book("The book number one.");
     }
 
     @Bean(name = "book2")
+    @Scope("prototype")
     public Book getBookTwo() {
         return new Book("The book number two");
     }

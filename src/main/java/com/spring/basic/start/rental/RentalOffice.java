@@ -11,17 +11,19 @@ public final class RentalOffice {
     private final List<String>rentedItems = new ArrayList<>();
     private RentalOfficeDbController rentalOfficeDbController;
 
-    public RentalOffice(final RentalOfficeDbController rentalOfficeDbController) {
-        this.rentalOfficeDbController = rentalOfficeDbController;
-    }
-
     public RentalOffice() {
         // nothing
     }
 
+    public RentalOffice(final RentalOfficeDbController rentalOfficeDbController) {
+        this.rentalOfficeDbController = rentalOfficeDbController;
+    }
+
     public void loadDataFromDb(){
+        rentalOfficeDbController.loadData();
     }
 
     public void saveDataToDb(){
+        rentalOfficeDbController.saveData();
     }
 }

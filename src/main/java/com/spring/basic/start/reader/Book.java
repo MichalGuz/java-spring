@@ -6,4 +6,8 @@ public final class Book {
     public Book(final String title) {
         this.title = title;
     }
+
+    public String getTitle() {
+        return title;
+    }
 }

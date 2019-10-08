@@ -20,10 +20,8 @@ public final class RentalOffice {
     }
 
     public void loadDataFromDb(){
-
     }
 
     public void saveDataToDb(){
-
     }
 }

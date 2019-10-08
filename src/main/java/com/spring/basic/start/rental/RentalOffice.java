@@ -6,4 +6,11 @@ import java.util.List;
 public final class RentalOffice {
     private final List<String>rentedItems = new ArrayList<>();
 
+    public void loadDataFromDb(){
+
+    }
+
+    public void saveDataToDb(){
+
+    }
 }

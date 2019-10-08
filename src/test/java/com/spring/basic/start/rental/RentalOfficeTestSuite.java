@@ -38,6 +38,7 @@ public class RentalOfficeTestSuite {
 
     @Test
     public void testContex() {
-
+        // given
+        ApplicationContext context = new AnnotationConfigApplicationContext(RentalOfficeConfiguration.class);
     }
 }

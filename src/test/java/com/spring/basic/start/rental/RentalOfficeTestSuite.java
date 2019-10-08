@@ -22,4 +22,17 @@ public class RentalOfficeTestSuite {
         // then
         // nothing
     }
+
+    @Test
+    public void testSaveDataToDb() {
+        // given
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
+        RentalOffice rentalOffice = context.getBean(RentalOffice.class);
+
+        // when
+        rentalOffice.saveDataToDb();
+
+        // then
+        // nothing
+    }
 }

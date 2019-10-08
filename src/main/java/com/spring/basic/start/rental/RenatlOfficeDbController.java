@@ -1,8 +1,8 @@
 package com.spring.basic.start.rental;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-@Service
+@Repository
 public final class RenatlOfficeDbController {
     public void saveData() {
         System.out.println("Saving data to the database.");

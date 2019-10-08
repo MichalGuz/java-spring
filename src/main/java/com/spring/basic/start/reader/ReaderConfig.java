@@ -16,4 +16,15 @@ public class ReaderConfig {
     public Reader getReader() {
         return new Reader(book);
     }
+
+    @Bean(name = "book1")
+    public Book getBookOne(){
+        return new Book("The book number one.")
+    }
+
+    @Bean(name = "book2")
+    public Book getBookTwo() {
+        return new Book("The book number two");
+    }
+
 }

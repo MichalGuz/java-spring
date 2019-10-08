@@ -52,6 +52,13 @@ public class RentalOfficeTestSuite {
 
     @Test
     public void testWiderContex() {
+        // given
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.spring");
 
+        // when & then
+        System.out.println("======= Beans list =======");
+        Arrays.stream(context.getBeanDefinitionNames())
+                .forEach(System.out::println);
+        System.out.println("===========================");
     }
 }

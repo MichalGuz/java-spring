@@ -35,4 +35,8 @@ public class BoardConfig {
     @Autowired
     @Qualifier("done")
     private TaskList done;
+
+    public Board getBoard() {
+        return new Board(toDoList, inProgress, done);
+    }
 }

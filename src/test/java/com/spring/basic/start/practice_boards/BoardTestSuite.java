@@ -46,4 +46,9 @@ public class BoardTestSuite {
         System.out.println("\nThere is a bean in the container:" + bean2 + ". The name of this bean is \"taskListInProgress\". Am I right?\n" + beanTwo);
         System.out.println("\nThere is a bean in the container:" + bean1 + ". The name of this bean is \"taskListDone\". Am I right?\n" + beanThree);
     }
+
+    @Test
+    public void testTaskAdd() {
+
+    }
 }

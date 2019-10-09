@@ -42,8 +42,8 @@ public class BoardTestSuite {
         System.out.println("List of beans (BoardConfig class):");
         Arrays.stream(names)
                 .forEach(System.out::println);
-        System.out.println("\nIs it true, that bean of name: " + bean1 + " exists in the container?\n" + beanOne);
-        System.out.println("\nIs it true, that bean of name: " + bean2 + " exists in the container?\n" + beanTwo);
-        System.out.println("\nIs it true, that bean of name: " + bean3 + " exists in the container?\n" + beanThree);
+        System.out.println("\nThere is a bean in the container: " + bean1 + ". The name of this bean is \"taskListToDo\". Am I right?\n" + beanOne);
+        System.out.println("\nThere is a bean in the container:" + bean2 + ". The name of this bean is \"taskListInProgress\". Am I right?\n" + beanTwo);
+        System.out.println("\nThere is a bean in the container:" + bean1 + ". The name of this bean is \"taskListDone\". Am I right?\n" + beanThree);
     }
 }

@@ -28,5 +28,6 @@ public class BoardConfig {
     private TaskList toDoList;
 
     @Autowired
+    @Qualifier("inProgress")
     private TaskList inProgress;
 }

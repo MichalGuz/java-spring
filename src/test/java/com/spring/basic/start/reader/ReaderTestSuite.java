@@ -14,4 +14,9 @@ public class ReaderTestSuite {
         // when & then
         reader.read();
     }
+
+    @Test
+    public void testConditional() {
+
+    }
 }

@@ -19,5 +19,8 @@ public class ReaderTestSuite {
     public void testConditional() {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext(Reader.class);
+
+        // when
+        boolean book2Exist = context.containsBean("book2");
     }
 }

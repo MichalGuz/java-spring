@@ -15,4 +15,9 @@ public class BoardConfig {
     public TaskList getTaskListInProgress() {
         return new TaskList();
     }
+
+    @Bean(name = "taskListDone")
+    public TaskList getTaskListDone() {
+        return new TaskList();
+    }
 }

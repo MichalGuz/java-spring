@@ -11,4 +11,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class BoardTestSuite {
     @Autowired
     private Board board;
+
+    @Test
+    public void testAddTask() {
+
+    }
 }

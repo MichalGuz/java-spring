@@ -14,6 +14,6 @@ public class BoardTestSuite {
 
     @Test
     public void testAddTask() {
-
+        board.getDoneList().getTasks().add("Task 1");
     }
 }

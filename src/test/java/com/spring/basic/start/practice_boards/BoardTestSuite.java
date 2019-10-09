@@ -26,5 +26,9 @@ public class BoardTestSuite {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext(BoardConfig.class);
 
+        // when
+        String bean1 = (String)context.getBean("taskListToDo");
+        boolean beanOne = context.containsBean("taskListToDo");
+
     }
 }

@@ -23,6 +23,7 @@ public class BoardConfig {
     }
 
     @Bean(name = "taskListDone")
+    @Scope("prototype")
     public TaskList getTaskListDone() {
         return new TaskList();
     }

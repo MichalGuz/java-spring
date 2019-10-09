@@ -25,6 +25,7 @@ public class BoardConfig {
 
     @Autowired
     @Qualifier("taskListToDo")
-    public TaskList toDoList;
+    private TaskList toDoList;
+
 
 }

@@ -1,7 +1,7 @@
 package com.spring.basic.start.practice_boards;
 
 public class Board {
-    public TaskList toDoList;
-    public TaskList inProgressList;
-    public TaskList doneList;
+    private final TaskList toDoList;
+    private final TaskList inProgressList;
+    private final TaskList doneList;
 }

@@ -17,6 +17,7 @@ public class BoardConfig {
     }
 
     @Bean(name = "taskListInProgress")
+    @Scope("prototype")
     public TaskList getTaskListInProgress() {
         return new TaskList();
     }

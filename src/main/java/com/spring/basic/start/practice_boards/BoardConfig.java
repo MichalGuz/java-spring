@@ -1,6 +1,7 @@
 package com.spring.basic.start.practice_boards;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -23,6 +24,7 @@ public class BoardConfig {
     }
 
     @Autowired
+    @Qualifier("taskListToDo")
     public TaskList toDoList;
 
 }

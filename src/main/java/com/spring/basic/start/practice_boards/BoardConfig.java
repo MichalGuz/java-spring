@@ -33,5 +33,6 @@ public class BoardConfig {
     private TaskList inProgress;
 
     @Autowired
+    @Qualifier("done")
     private TaskList done;
 }

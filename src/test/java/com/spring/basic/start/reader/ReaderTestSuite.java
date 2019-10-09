@@ -17,6 +17,7 @@ public class ReaderTestSuite {
 
     @Test
     public void testConditional() {
-
+        // given
+        ApplicationContext context = new AnnotationConfigApplicationContext(Reader.class);
     }
 }

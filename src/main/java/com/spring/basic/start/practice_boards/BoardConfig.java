@@ -32,11 +32,11 @@ public class BoardConfig {
     private TaskList toDoList;
 
     @Autowired
-    @Qualifier("inProgress")
+    @Qualifier("taskListInProgress")
     private TaskList inProgress;
 
     @Autowired
-    @Qualifier("done")
+    @Qualifier("taskListDone")
     private TaskList done;
 
     @Bean

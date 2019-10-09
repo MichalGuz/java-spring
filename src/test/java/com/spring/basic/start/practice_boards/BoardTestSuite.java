@@ -39,6 +39,9 @@ public class BoardTestSuite {
         boolean beanThree = context.containsBean("taskListDone");
 
         // then
+        System.out.println("List of beans (BoardConfig class):");
+        Arrays.stream(names)
+                .forEach(System.out::println);
         System.out.println("\nIs it true, that bean of name: " + bean1 + " exists in the container?\n" + beanOne);
         System.out.println("\nIs it true, that bean of name: " + bean2 + " exists in the container?\n" + beanTwo);
         System.out.println("\nIs it true, that bean of name: " + bean3 + " exists in the container?\n" + beanThree);

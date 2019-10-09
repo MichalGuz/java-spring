@@ -18,4 +18,9 @@ public class BoardTestSuite {
         board.getDoneList().getTasks().add("Task 1");
         Assert.assertEquals(1, board.getDoneList().getTasks().size());
     }
+
+    @Test
+    public void testOfExistingBeans() {
+
+    }
 }

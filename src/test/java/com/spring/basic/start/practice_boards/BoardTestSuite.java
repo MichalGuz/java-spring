@@ -50,7 +50,10 @@ public class BoardTestSuite {
     @Test
     public void testTaskAdd() {
         // given
-        ApplicationContext context = new AnnotationConfigApplicationContext(BoardConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
+
+        // when
+
 
     }
 }

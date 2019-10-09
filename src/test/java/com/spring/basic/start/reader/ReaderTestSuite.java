@@ -22,5 +22,8 @@ public class ReaderTestSuite {
 
         // when
         boolean book2Exist = context.containsBean("book2");
+
+        // then
+        System.out.println("Bean book2 was found in the container: " + book2Exist);
     }
 }

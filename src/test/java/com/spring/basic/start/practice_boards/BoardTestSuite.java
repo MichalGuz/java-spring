@@ -9,6 +9,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class BoardTestSuite {
@@ -27,12 +30,17 @@ public class BoardTestSuite {
         ApplicationContext context = new AnnotationConfigApplicationContext(BoardConfig.class);
 
         // when
-        String bean1 = (String)context.getBean("taskListToDo");
+        String[] names = context.getBeanDefinitionNames();
+        TaskList bean1 = (TaskList)context.getBean("taskListToDo");
         boolean beanOne = context.containsBean("taskListToDo");
-        String bean2 = (String)context.getBean("taskListInProgress");
+        TaskList bean2 = (TaskList) context.getBean("taskListInProgress");
         boolean beanTwo = context.containsBean("taskListInProgress");
-        String bean3 = (String)context.getBean("taskListDone");
+        TaskList bean3 = (TaskList) context.getBean("taskListDone");
         boolean beanThree = context.containsBean("taskListDone");
 
+        // then
+        System.out.println("\nIs it true, that bean of name: " + bean1 + " exists in the container?\n" + beanOne);
+        System.out.println("\nIs it true, that bean of name: " + bean2 + " exists in the container?\n" + beanTwo);
+        System.out.println("\nIs it true, that bean of name: " + bean3 + " exists in the container?\n" + beanThree);
     }
 }

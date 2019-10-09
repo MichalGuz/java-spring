@@ -49,6 +49,8 @@ public class BoardTestSuite {
 
     @Test
     public void testTaskAdd() {
+        // given
+        ApplicationContext context = new AnnotationConfigApplicationContext(BoardConfig.class);
 
     }
 }

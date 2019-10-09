@@ -51,8 +51,8 @@ public class BoardTestSuite {
     public void testTaskAdd() {
         // given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.spring.basic.start");
+        Board board = context.getBean(Board.class);
 
-        // when
 
 
     }

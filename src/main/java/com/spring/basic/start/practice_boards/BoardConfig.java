@@ -1,5 +1,6 @@
 package com.spring.basic.start.practice_boards;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,4 +21,8 @@ public class BoardConfig {
     public TaskList getTaskListDone() {
         return new TaskList();
     }
+
+    @Autowired
+    public TaskList toDoList;
+
 }

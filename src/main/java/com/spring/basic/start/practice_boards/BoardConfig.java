@@ -1,5 +1,6 @@
 package com.spring.basic.start.practice_boards;
 
+import javafx.concurrent.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -30,4 +31,7 @@ public class BoardConfig {
     @Autowired
     @Qualifier("inProgress")
     private TaskList inProgress;
+
+    @Autowired
+    private TaskList done;
 }

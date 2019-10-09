@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -55,5 +56,16 @@ public class BoardTestSuite {
         board.getToDoList().getTasks().add("task 1");
         board.getInProgressList().getTasks().add("task 2");
         board.getDoneList().getTasks().add("task 3");
+
+        // when
+        TaskList toDoList = board.getToDoList();
+        List<String> list1 = toDoList.getTasks();
+        TaskList inProgress = board.getInProgressList();
+        List<String> list2 = inProgress.getTasks();
+        TaskList doneList = board.getDoneList();
+        List<String> list3 = doneList.getTasks();
+
+        // then
+        System.out.println(list1.get(0) + "\n" + list2.get(0) + "\n" + list3.get(0));
     }
 }

@@ -36,6 +36,7 @@ public class BoardConfig {
     @Qualifier("done")
     private TaskList done;
 
+    @Bean
     public Board getBoard() {
         return new Board(toDoList, inProgress, done);
     }

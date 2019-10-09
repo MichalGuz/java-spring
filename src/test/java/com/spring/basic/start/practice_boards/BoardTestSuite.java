@@ -31,6 +31,8 @@ public class BoardTestSuite {
         boolean beanOne = context.containsBean("taskListToDo");
         String bean2 = (String)context.getBean("taskListInProgress");
         boolean beanTwo = context.containsBean("taskListInProgress");
+        String bean3 = (String)context.getBean("taskListToDo");
+        boolean beanThree = context.containsBean("taskListToDo");
 
     }
 }

@@ -27,4 +27,40 @@ public class Order {
         }
         return sum;
     }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public boolean isPaid() {
+        return isPaid;
+    }
+
+    public boolean isVerified() {
+        return isVerified;
+    }
+
+    public boolean isSubmitted() {
+        return isSubmitted;
+    }
+
+    public void setPaid(boolean paid) {
+        isPaid = paid;
+    }
+
+    public void setVerified(boolean verified) {
+        isVerified = verified;
+    }
+
+    public void setSubmitted(boolean submitted) {
+        isSubmitted = submitted;
+    }
 }

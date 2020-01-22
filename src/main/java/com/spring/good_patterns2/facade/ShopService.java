@@ -15,6 +15,14 @@ public class ShopService {
     private ProductService productService;
 
     public Long openOrder(Long userId) {
-        return maxOrder;
+        if (authenticator.isAuthenticated(userId)) {
+            Long maxOrder = (long) orders.stream()
+                    .mapToInt(o -> o.getOrderId().intValue())
+                    .max().orElse(0);
+            orders.add(new Order(productService, maxOrder + 1, userId));
+            return maxOrder + 1;
+        } else {
+            return -1L;
+        }
     }
 }

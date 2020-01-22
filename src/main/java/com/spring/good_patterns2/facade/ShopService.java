@@ -25,4 +25,8 @@ public class ShopService {
             return -1L;
         }
     }
+
+    public void addItem(long orderId, Long productId, double quantity ) {
+
+    }
 }

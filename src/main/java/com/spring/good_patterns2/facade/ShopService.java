@@ -13,4 +13,8 @@ public class ShopService {
 
     @Autowired
     private ProductService productService;
+
+    public Long openOrder(Long userId) {
+        return maxOrder;
+    }
 }

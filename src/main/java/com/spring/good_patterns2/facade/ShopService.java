@@ -31,4 +31,6 @@ public class ShopService {
                 .filter(o -> o.getOrderId().equals(orderId))
                 .forEach(o -> o.getItems().add(new Item(productId, quantity)));
     }
+
+    public void removeItem(Long orderId, Long productId) {}
 }

@@ -3,6 +3,7 @@ package com.spring.good_patterns2.facade;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ShopService {
@@ -32,5 +33,10 @@ public class ShopService {
                 .forEach(o -> o.getItems().add(new Item(productId, quantity)));
     }
 
-    public void removeItem(Long orderId, Long productId) {}
+    public void removeItem(Long orderId, Long productId) {
+        Iterator<Order> orderIterator = orders.stream()
+                .filter(o -> o.getOrderId().equals(orderId))
+                .iterator();
+
+    }
 }

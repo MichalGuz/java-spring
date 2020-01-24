@@ -52,6 +52,8 @@ public class ShopService {
     }
 
     public BigDecimal calculateValue(Long orderId) {
-
+        Iterator<Order> orderIterator = orders.stream()
+                .filter(o -> o.getOrderId().equals(orderId))
+                .iterator();
     }
 }

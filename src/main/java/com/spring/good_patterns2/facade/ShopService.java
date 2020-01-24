@@ -2,6 +2,7 @@ package com.spring.good_patterns2.facade;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -48,5 +49,9 @@ public class ShopService {
             }
         }
         return false;
+    }
+
+    public BigDecimal calculateValue(Long orderId) {
+
     }
 }

@@ -73,8 +73,10 @@ public class ShopService {
                 return true;
             } else {
                 Random generator =new Random();
-
+                theOrder.setPaid(generator.nextBoolean());
+                return theOrder.isPaid();
             }
         }
+        return false;
     }
 }

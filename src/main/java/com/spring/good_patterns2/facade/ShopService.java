@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 public class ShopService {
     private final List<Order> orders = new ArrayList<>();
@@ -66,5 +67,14 @@ public class ShopService {
         Iterator<Order> orderIterator = orders.stream()
                 .filter((o -> o.getOrderId().equals(orderId)))
                 .iterator();
+        while (orderIterator.hasNext()) {
+            Order theOrder= orderIterator.next();
+            if (theOrder.isPaid()) {
+                return true;
+            } else {
+                Random generator =new Random();
+
+            }
+        }
     }
 }

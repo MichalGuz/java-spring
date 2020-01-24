@@ -58,7 +58,7 @@ public class ShopService {
         while (orderIterator.hasNext()) {
             Order theOrder = orderIterator.next();
             return theOrder.calculateValue();
-;        }
+        }
         return BigDecimal.ZERO;
     }
 }

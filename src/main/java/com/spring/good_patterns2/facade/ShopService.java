@@ -61,4 +61,8 @@ public class ShopService {
         }
         return BigDecimal.ZERO;
     }
+
+    public boolean doPayment(Long orderid) {
+
+    }
 }

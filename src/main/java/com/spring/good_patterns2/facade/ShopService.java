@@ -62,7 +62,9 @@ public class ShopService {
         return BigDecimal.ZERO;
     }
 
-    public boolean doPayment(Long orderid) {
-
+    public boolean doPayment(Long orderId) {
+        Iterator<Order> orderIterator = orders.stream()
+                .filter((o -> o.getOrderId().equals(orderId)))
+                .iterator();
     }
 }

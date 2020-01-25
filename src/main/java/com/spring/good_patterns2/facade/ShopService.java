@@ -87,7 +87,10 @@ public class ShopService {
         while (orderIterator.hasNext()){
             Order theOrder = orderIterator.next();
             boolean result = theOrder.isPaid();
-
+            Random generator = new Random();
+            if (!theOrder.isVerified()) {
+                theOrder.setVerified(result && generator.nextBoolean());
+            }
         }
     }
 }

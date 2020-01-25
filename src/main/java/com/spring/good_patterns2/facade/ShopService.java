@@ -91,6 +91,8 @@ public class ShopService {
             if (!theOrder.isVerified()) {
                 theOrder.setVerified(result && generator.nextBoolean());
             }
+            return theOrder.isVerified();
         }
+        return false;
     }
 }

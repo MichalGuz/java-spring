@@ -81,6 +81,9 @@ public class ShopService {
     }
 
     public boolean verifyOrder(Long orderId) {
+        Iterator<Order> orderIterator = orders.stream()
+                .filter(o -> o.getOrderId().equals(orderId))
+                .iterator();
 
-    }
+        }
 }

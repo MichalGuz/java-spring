@@ -79,4 +79,8 @@ public class ShopService {
         }
         return false;
     }
+
+    public boolean verifyOrder(Long orderId) {
+
+    }
 }

@@ -110,4 +110,5 @@ public class ShopService {
         return false;
     }
 
+    public void cancelOrder(Long orderId) {}
 }

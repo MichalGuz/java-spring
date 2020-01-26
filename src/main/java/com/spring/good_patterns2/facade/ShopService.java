@@ -100,6 +100,14 @@ public class ShopService {
         Iterator<Order> orderIterator = orders.stream()
                 .filter(o -> o.getOrderId().equals(orderId))
                 .iterator();
+        while (orderIterator.hasNext()) {
+            Order theOder = orderIterator.next();
+            if (theOder.isVerified()) {
+                theOder.setSubmitted(true);
+            }
+            return theOder.isSubmitted();
+        }
+        return false;
     }
 
 }

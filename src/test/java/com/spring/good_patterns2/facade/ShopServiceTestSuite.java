@@ -13,5 +13,8 @@ public class ShopServiceTestSuite {
     private ShopService shopService;
 
     @Test
-    public void testShopServiceSubmitOrderWithoutFacade(){}
+    public void testShopServiceSubmitOrderWithoutFacade(){
+        long orderId = shopService.openOrder(1L);
+        System.out.println("Registering new order, ID: " + orderId);
+    }
 }

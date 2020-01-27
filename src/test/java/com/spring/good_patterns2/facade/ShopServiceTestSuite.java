@@ -27,7 +27,9 @@ public class ShopServiceTestSuite {
             System.out.println("Adding item: 83, 2 pcs");
             shopService.addItem(orderId, 19L, 45);
             System.out.println("Adding item: 19, 45 pcs");
-
+            if (shopService.removeItem(orderId, 10L)) {
+                System.out.println("Item 10 was deleted");
+            }
         }
     }
 }

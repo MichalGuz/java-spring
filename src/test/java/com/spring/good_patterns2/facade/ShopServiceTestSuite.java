@@ -19,6 +19,15 @@ public class ShopServiceTestSuite {
         if (orderId > 0) {
             shopService.addItem(orderId, 107L, 12);
             System.out.println("Adding item: 107, 12 pcs");
+            shopService.addItem(orderId, 35L, 15);
+            System.out.println("Adding item: 35, 15 pcs");
+            shopService.addItem(orderId, 10L, 5);
+            System.out.println("Adding item: 10, 5 pcs");
+            shopService.addItem(orderId, 83L, 2);
+            System.out.println("Adding item: 83, 2 pcs");
+            shopService.addItem(orderId, 19L, 45);
+            System.out.println("Adding item: 19, 45 pcs");
+
         }
     }
 }

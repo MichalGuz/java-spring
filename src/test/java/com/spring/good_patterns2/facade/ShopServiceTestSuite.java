@@ -16,5 +16,9 @@ public class ShopServiceTestSuite {
     public void testShopServiceSubmitOrderWithoutFacade(){
         long orderId = shopService.openOrder(1L);
         System.out.println("Registering new order, ID: " + orderId);
+        if (orderId > 0) {
+            shopService.addItem(orderId, 107L, 12);
+            System.out.println("Adding item: 107, 12 pcs");
+        }
     }
 }

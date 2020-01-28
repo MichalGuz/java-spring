@@ -36,6 +36,7 @@ public class ShopServiceTestSuite {
             }
 
             BigDecimal value = shopService.calculateValue(orderId);
+            System.out.println("Order  value is: " + value + "PLN");
 
         }
     }

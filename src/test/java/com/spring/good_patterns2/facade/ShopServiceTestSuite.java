@@ -54,6 +54,8 @@ public class ShopServiceTestSuite {
                 shopService.cancelOrder(orderId);
                 System.out.println("Order is cancelled.");
             }
+        } else {
+            System.out.println("Access denied. User is not authenticated.");
         }
     }
 }

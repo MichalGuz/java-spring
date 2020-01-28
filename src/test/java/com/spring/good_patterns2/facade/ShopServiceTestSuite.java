@@ -39,7 +39,15 @@ public class ShopServiceTestSuite {
             System.out.println("Order  value is: " + value + "PLN");
             if (shopService.doPayment(orderId)){
                 System.out.println("Payment for order was done.");
+            } else {
+                System.out.println("Payment was rejected.");
             }
+            if (shopService.verifyOrder(orderId)){
+                System.out.println("order is ready to submit.");
+            } else {
+                System.out.println("Order cannot be submitted.");
+            }
+
 
         }
     }

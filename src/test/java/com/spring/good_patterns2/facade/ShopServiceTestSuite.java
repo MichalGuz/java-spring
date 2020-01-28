@@ -37,6 +37,9 @@ public class ShopServiceTestSuite {
 
             BigDecimal value = shopService.calculateValue(orderId);
             System.out.println("Order  value is: " + value + "PLN");
+            if (shopService.doPayment(orderId)){
+                System.out.println("Payment for order was done.");
+            }
 
         }
     }

@@ -47,8 +47,11 @@ public class ShopServiceTestSuite {
             } else {
                 System.out.println("Order cannot be submitted.");
             }
-
-
+            if (shopService.submitOrder(orderId)) {
+                System.out.println("Order submitted - thank you for your purchase.");
+            } else {
+                System.out.println("Order not submitted - cancelling");
+            }
         }
     }
 }

@@ -51,6 +51,8 @@ public class ShopServiceTestSuite {
                 System.out.println("Order submitted - thank you for your purchase.");
             } else {
                 System.out.println("Order not submitted - cancelling");
+                shopService.cancelOrder(orderId);
+                System.out.println("Order is cancelled.");
             }
         }
     }

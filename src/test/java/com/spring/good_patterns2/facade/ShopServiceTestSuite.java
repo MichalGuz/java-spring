@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ShopServiceTestSuite {
@@ -32,6 +34,9 @@ public class ShopServiceTestSuite {
             } else {
                 throw new IllegalArgumentException("Order data is corrupted");
             }
+
+            BigDecimal value = shopService.calculateValue(orderId);
+
         }
     }
 }

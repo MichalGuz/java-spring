@@ -1,6 +1,7 @@
 package com.spring.good_patterns2.facade;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+@Service
 public class ShopService {
     private final List<Order> orders = new ArrayList<>();
 

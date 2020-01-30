@@ -1,4 +1,4 @@
 package com.spring.good_patterns2.facade.api;
 
-public class OrderDto {
+public final class OrderDto {
 }

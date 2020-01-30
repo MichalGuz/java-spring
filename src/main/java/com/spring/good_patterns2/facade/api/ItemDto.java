@@ -8,4 +8,12 @@ public final class ItemDto {
         this.productId = productId;
         this.quantity = quantity;
     }
+
+    public Long getProductId() {
+        return productId;
+    }
+
+    public double getQuantity() {
+        return quantity;
+    }
 }

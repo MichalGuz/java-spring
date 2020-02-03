@@ -11,4 +11,9 @@ public final class OrderFacade {
     @Autowired
     private ShopService shopService;
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderFacade.class);
+
+
+    public void processOrder(final OrderDto, final Long userId) {
+
+    }
 }

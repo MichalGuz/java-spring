@@ -12,8 +12,7 @@ public final class OrderFacade {
     private ShopService shopService;
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderFacade.class);
 
-
-    public void processOrder(final OrderDto, final Long userId) {
+    public void processOrder(final OrderDto order, final Long userId) {
 
     }
 }

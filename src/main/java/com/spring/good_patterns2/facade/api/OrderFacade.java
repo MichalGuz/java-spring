@@ -15,5 +15,6 @@ public final class OrderFacade {
     public void processOrder(final OrderDto order, final Long userId) throws OrderProcessingException {
         boolean wasError = false;
         long orderId = shopService.openOrder(userId);
+        LOGGER.info("Registering new order, ID :" + orderId);
     }
 }

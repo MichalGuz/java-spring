@@ -13,6 +13,7 @@ public final class OrderFacade {
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderFacade.class);
 
     public void processOrder(final OrderDto order, final Long userId) throws OrderProcessingException {
-
+        boolean wasError = false;
+        long orderId = shopService.openOrder(userId);
     }
 }

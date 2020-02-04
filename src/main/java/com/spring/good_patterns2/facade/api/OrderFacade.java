@@ -48,8 +48,12 @@ public final class OrderFacade {
                 wasError = true;
                 throw new OrderProcessingException(OrderProcessingException.ERR_SUBMITTING_ERROR);
             }
-
+            LOGGER.info("Order " + orderId +  "submitted.");
         } finally  {
+            if (wasError) {
+                LOGGER.info("Cancelling order " + orderId);
+                shopService.cancelOrder(orderId);
+            }
 
         }
     }

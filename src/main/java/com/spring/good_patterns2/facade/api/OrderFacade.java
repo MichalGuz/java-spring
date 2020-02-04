@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
+
 @Service
 public final class OrderFacade {
     @Autowired
@@ -26,6 +28,8 @@ public final class OrderFacade {
                 LOGGER.info("Adding item " + orderItem.getProductId() + ", "+ orderItem.getQuantity() + " pcs");
                 shopService.addItem(orderId, orderItem.getProductId(), orderItem.getQuantity());
             }
+            BigDecimal value = shopService.calculateValue(orderId);
+            LOGGER.info("Order value is: " + value + " USD");
         } finally  {
 
         }

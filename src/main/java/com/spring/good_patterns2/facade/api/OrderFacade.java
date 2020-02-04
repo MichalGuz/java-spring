@@ -37,6 +37,11 @@ public final class OrderFacade {
                 throw new OrderProcessingException(OrderProcessingException.ERR_PAYMENT_REJECTED);
             }
             LOGGER.info("Payment for order was done");
+            if (!shopService.verifyOrder(orderId)) {
+                LOGGER.error(OrderProcessingException.ERR_VERIFICATION_ERROR);
+                wasError = true;
+                throw new OrderProcessingException((OrderProcessingException.ERR_VERIFICATION_ERROR));
+            }
         } finally  {
 
         }

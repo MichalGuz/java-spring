@@ -42,6 +42,8 @@ public final class OrderFacade {
                 wasError = true;
                 throw new OrderProcessingException((OrderProcessingException.ERR_VERIFICATION_ERROR));
             }
+            LOGGER.info("Order is ready to submit");
+            if ()
         } finally  {
 
         }

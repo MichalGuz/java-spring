@@ -22,7 +22,10 @@ public final class OrderFacade {
             throw new OrderProcessingException(OrderProcessingException.ERR_NOT_AUTHORISED);
         }
         try {
-
+            for (ItemDto orderItem : order.getItems()) {
+                LOGGER.info("Adding item " + orderItem.getProductId() + ", "+ orderItem.getQuantity() + " pcs");
+                shopService.addItem(orderId, orderItem.getProductId(), orderItem.getQuantity());
+            }
         } finally  {
 
         }

@@ -1,6 +1,7 @@
 package com.spring.good_patterns2.facade.api;
 
 import com.spring.good_patterns2.facade.ShopService;
+import com.sun.org.apache.xpath.internal.operations.Or;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,11 @@ public final class OrderFacade {
             }
             BigDecimal value = shopService.calculateValue(orderId);
             LOGGER.info("Order value is: " + value + " USD");
+            if (!shopService.doPayment(orderId)) {
+                LOGGER.error(OrderProcessingException.ERR_PAYMENT_REJECTED);
+                wasError = true;
+                throw new OrderProcessingException(OrderProcessingException.ERR_PAYMENT_REJECTED);
+            }
         } finally  {
 
         }

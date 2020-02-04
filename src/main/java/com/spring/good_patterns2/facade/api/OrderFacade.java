@@ -36,6 +36,7 @@ public final class OrderFacade {
                 wasError = true;
                 throw new OrderProcessingException(OrderProcessingException.ERR_PAYMENT_REJECTED);
             }
+            LOGGER.info("Payment for order was done");
         } finally  {
 
         }

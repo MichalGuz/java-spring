@@ -2,6 +2,7 @@ package com.spring.good_patterns2.facade;
 
 import com.spring.good_patterns2.facade.api.ItemDto;
 import com.spring.good_patterns2.facade.api.OrderDto;
+import com.spring.good_patterns2.facade.api.OrderFacade;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,9 @@ import java.math.BigDecimal;
 public class ShopServiceTestSuite {
     @Autowired
     private ShopService shopService;
+
+    @Autowired
+    private OrderFacade orderFacade;
 
     @Test
     public void testShopServiceSubmitOrderWithoutFacade(){

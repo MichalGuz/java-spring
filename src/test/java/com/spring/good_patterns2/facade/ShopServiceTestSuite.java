@@ -1,5 +1,6 @@
 package com.spring.good_patterns2.facade;
 
+import com.spring.good_patterns2.facade.api.OrderDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,5 +61,7 @@ public class ShopServiceTestSuite {
     }
 
     @Test
-    public void testShopFacade(){}
+    public void testShopFacade(){
+        OrderDto orderDto = new OrderDto();
+    }
 }

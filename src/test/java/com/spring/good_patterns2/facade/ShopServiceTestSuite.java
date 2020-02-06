@@ -3,6 +3,7 @@ package com.spring.good_patterns2.facade;
 import com.spring.good_patterns2.facade.api.ItemDto;
 import com.spring.good_patterns2.facade.api.OrderDto;
 import com.spring.good_patterns2.facade.api.OrderFacade;
+import com.spring.good_patterns2.facade.api.OrderProcessingException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class ShopServiceTestSuite {
     private OrderFacade orderFacade;
 
     @Test
-    public void testShopServiceSubmitOrderWithoutFacade(){
+    public void testShopServiceSubmitOrderWithoutFacade() {
         long orderId = shopService.openOrder(1L);
         System.out.println("Registering new order, ID: " + orderId);
         if (orderId > 0) {
@@ -43,12 +44,12 @@ public class ShopServiceTestSuite {
 
             BigDecimal value = shopService.calculateValue(orderId);
             System.out.println("Order  value is: " + value + "PLN");
-            if (shopService.doPayment(orderId)){
+            if (shopService.doPayment(orderId)) {
                 System.out.println("Payment for order was done.");
             } else {
                 System.out.println("Payment was rejected.");
             }
-            if (shopService.verifyOrder(orderId)){
+            if (shopService.verifyOrder(orderId)) {
                 System.out.println("Order is ready to submit.");
             } else {
                 System.out.println("Order cannot be submitted.");
@@ -66,14 +67,16 @@ public class ShopServiceTestSuite {
     }
 
     @Test
-    public void testShopFacade(){
+    public void testShopFacade() {
         OrderDto orderDto = new OrderDto();
         orderDto.addItem(new ItemDto(23L, 1));
-        orderDto.addItem(new ItemDto(30L,2));
+        orderDto.addItem(new ItemDto(30L, 2));
         orderDto.addItem(new ItemDto(33L, 3));
         orderDto.addItem(new ItemDto(40L, 4));
         try {
             orderFacade.processOrder(orderDto, 1L);
+        } catch (OrderProcessingException d) {
+
         }
     }
 }

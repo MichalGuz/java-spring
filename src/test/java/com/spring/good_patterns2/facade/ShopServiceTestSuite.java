@@ -58,4 +58,7 @@ public class ShopServiceTestSuite {
             System.out.println("Access denied. User is not authenticated.");
         }
     }
+
+    @Test
+    public void testShopFacade(){}
 }

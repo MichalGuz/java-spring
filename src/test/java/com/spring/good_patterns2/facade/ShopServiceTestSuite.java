@@ -72,5 +72,8 @@ public class ShopServiceTestSuite {
         orderDto.addItem(new ItemDto(30L,2));
         orderDto.addItem(new ItemDto(33L, 3));
         orderDto.addItem(new ItemDto(40L, 4));
+        try {
+            orderFacade.processOrder(orderDto, 1L);
+        }
     }
 }

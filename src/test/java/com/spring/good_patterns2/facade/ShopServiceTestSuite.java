@@ -1,5 +1,6 @@
 package com.spring.good_patterns2.facade;
 
+import com.spring.good_patterns2.facade.api.ItemDto;
 import com.spring.good_patterns2.facade.api.OrderDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -63,5 +64,9 @@ public class ShopServiceTestSuite {
     @Test
     public void testShopFacade(){
         OrderDto orderDto = new OrderDto();
+        orderDto.addItem(new ItemDto(23L, 1));
+        orderDto.addItem(new ItemDto(30L,2));
+        orderDto.addItem(new ItemDto(33L, 3));
+        orderDto.addItem(new ItemDto(40L, 4));
     }
 }
